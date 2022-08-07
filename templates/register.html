@@ -24,6 +24,8 @@
 </style>
 </head>
 <body>
+    <br>
+    <br>
 
 
     <div class="container">
@@ -36,13 +38,18 @@
                 <h3>Account Registration</h3>
                  <div class="login--wrapper">
                     <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Username</label>
-                     <input type="text" class="form-control" name="username" id="InputEmail1" aria-describedby="emailHelp">
+                    <label for="fisrtname1" class="form-label">First Name</label>
+                     <input type="text" class="form-control" name="firstname" id="firstname1">
          
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Fistname</label>
-                         <input type="text" class="form-control" name="firstname" id="name1" aria-describedby="emailHelp">
+                        <label for="username1" class="form-label">Username</label>
+                         <input type="text" class="form-control" name="username" id="username1">
+             
+                        </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                         <input type="email" class="form-control" name="email" id="email1" aria-describedby="emailHelp">
              
                         </div>
                     <div class="mb-3">
@@ -50,13 +57,14 @@
                         <input type="password" class="form-control" name="password" id="Password1">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">confirmPassword</label>
+                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
                         <input type="password1" class="form-control" name="confirmpassword" id="Password1">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <br>
+                    <p>Have an Account? <a href="{% url 'login' %}">Login</a></p>
                 
-                    <!-- <p>Have an Account? <a href="{% url 'login' %}">create one</a></p> -->
+                   
             </form>
         </div>
     </div>
