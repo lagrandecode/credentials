@@ -31,12 +31,13 @@
           
         <div class="login">
     
-            <form class="form">
+            <form class="form" method="post">
+                {% csrf_token %}
                 <h3>Account Registration</h3>
                  <div class="login--wrapper">
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Username</label>
-                     <input type="email" class="form-control" name="username" id="InputEmail1" aria-describedby="emailHelp">
+                     <input type="text" class="form-control" name="username" id="InputEmail1" aria-describedby="emailHelp">
          
                     </div>
                     <div class="mb-3">
@@ -44,6 +45,9 @@
                         <input type="password" class="form-control" name="password" id="Password1">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <br>
+                
+                    <p>Don't have an Account? <a href="{% url 'home' %}">create one</a></p>
             </form>
         </div>
     </div>
