@@ -63,6 +63,12 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <br>
                     <p>Have an Account? <a href="{% url 'login' %}">Login</a></p>
+                    <br>
+                    <br>
+                    {% for message in messages %}
+                    <h3 style="color: red;">{{message}}</h3>
+
+                    {% endfor %}
                 
                    
             </form>
