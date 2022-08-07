@@ -1,6 +1,6 @@
 {% if request.user.is_authenticated %}
 <h3>Hello, {{request.user}}</h3>
-<button type="submit" >logout <a href="{{logout}}"></a></button>
+<button type="submit" ><a href="{% url 'logout' %}">logout</a></button>
 {% else %}
 <h3>HELLO WORLD</h3>
 
