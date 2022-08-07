@@ -1,31 +1,36 @@
 
 
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import authenticate, login, User
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 # Create your views here.
 
 def registerview(request):
     if request.method == 'POST':
-        firstname = request.POST['firstname']
+        first_name = request.POST['first_name']
         username = request.POST['username']
         email = request.POST['email']
         password = request.POST['password']
         confirmpassword = request.POST['confirmpassword']
         if password == confirmpassword:
-            user = User.objects.create_user(firstname=firstname,username=username,email=email,password=password)
-            if user.is_valid():
-                user.save()
-                return redirect('home')
+            if User.objects.filter(username=username).exists():
+                messages.info(request,'Username Already Exist')
+                return redirect('register')
+            elif User.objects.filter(email=email).exists():
+                messages.info(request,'Email Already Exist')
+                return redirect('register')
+            else:
+                user = User.objects.create_user(username=username,email=email,password=password,first_name=first_name)
+                if user.is_valid():
+                    user.save()
+                    print(user)
+                    return redirect('login')
         else:
             messages.info(request,'password not matching')
-            return redirect('/')
-
-
-
-
-
+            print(messages)
+            return redirect('register')
     return render(request, 'register.html')
 
 
@@ -34,7 +39,7 @@ def loginview(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
+        user = auth.authenticate(request, username=username, password=password)
         if user is not None:
             login(request,user)
             return redirect('home')
@@ -47,6 +52,6 @@ def loginview(request):
 
 
 
-def logout(request):
-    logout(request)
-    return render(request, 'login.html')
+def logoutview(request):
+    auth.logout(request)
+    return redirect('home')
