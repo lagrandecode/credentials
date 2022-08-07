@@ -33,7 +33,7 @@
     
             <form class="form" method="post">
                 {% csrf_token %}
-                <h3>Account Registration</h3>
+                <h3>Login Account</h3>
                  <div class="login--wrapper">
                     <div class="mb-3">
                     <label for="username1" class="form-label">Username</label>
@@ -47,8 +47,12 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <br>
                     <p>Don't have an Account? <a href="{% url 'register' %}">Create</a></p>
-                
-                   
+                    <br>
+                    <br>
+                    {% for message in messages %}
+                    <h3 style="color: red;">{{message}}</h3>
+
+                    {% endfor %}
             </form>
         </div>
     </div>
