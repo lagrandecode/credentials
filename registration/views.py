@@ -19,4 +19,4 @@ def loginview(request):
             return redirect('home')
             print(user)
     else:
-        return render(request, 'register.html')
+        return render(request, 'login.html')
