@@ -41,13 +41,22 @@
          
                     </div>
                     <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Fistname</label>
+                         <input type="text" class="form-control" name="firstname" id="name1" aria-describedby="emailHelp">
+             
+                        </div>
+                    <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" name="password" id="Password1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">confirmPassword</label>
+                        <input type="password1" class="form-control" name="confirmpassword" id="Password1">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <br>
                 
-                    <p>Don't have an Account? <a href="{% url 'home' %}">create one</a></p>
+                    <p>Have an Account? <a href="{% url 'accounts/login' %}">create one</a></p>
             </form>
         </div>
     </div>
