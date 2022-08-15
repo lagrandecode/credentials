@@ -1,6 +1,7 @@
 
 *{
-    background-color: blanchedalmond;
+    background-color: black;
+   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,4 +15,16 @@
     background-size: cover;
     background-position: center;
     
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: bisque;
 }
