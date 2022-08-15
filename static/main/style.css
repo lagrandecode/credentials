@@ -9,7 +9,7 @@
 }
 
 .hero{
-    height: 100vh;
+    height: 127vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url(/static/unnamed.png);
     background-size: cover;
