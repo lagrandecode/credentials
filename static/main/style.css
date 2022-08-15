@@ -27,4 +27,44 @@ nav{
 }
 .logo{
     color: bisque;
+    font-size: 28px;
+}
+
+span{
+    color: rgb(236, 35, 193);
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(236, 35, 193);
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+button{
+    background: rgb(236, 35, 193);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px 5px 10px 0px;
+    font-weight: bold;
+    color: white ;
+    font-size: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }

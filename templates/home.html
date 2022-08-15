@@ -14,11 +14,11 @@
     {% if request.user.is_authenticated %}
 <h3>Hello, {{request.user}}</h3>
 <button type="submit" ><a href="{% url 'logout' %}">logout</a></button>
-{% else %}
+{% endif %}
 
 <div class="hero">
     <nav>
-        <h2 class="logo">Oluwaseun T</h2>
+        <h2 class="logo">Oluwaseun<span> T</span></h2>
         <ul>
             <li>
                 <a href="#">Home</a>
@@ -34,9 +34,9 @@
 
 
 
-{% endif %}
 
-<img src="{% static 'audio.png' %}" title="Nike" alt="www.google.com">
+
+
 
 </body>
 </html>
