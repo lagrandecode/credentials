@@ -68,3 +68,7 @@ button:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
+.but{
+    text-decoration: none;
+    font-weight: bold;
+}
