@@ -23,10 +23,10 @@ def registerview(request):
                 return redirect('register')
             else:
                 user = User.objects.create_user(username=username,email=email,password=password,first_name=first_name)
-                if user.is_valid():
-                    user.save()
-                    print(user)
-                    return redirect('login')
+                user.save()
+                print(user)
+                return redirect('login')
+
         else:
             messages.info(request,'password not matching')
             print(messages)
