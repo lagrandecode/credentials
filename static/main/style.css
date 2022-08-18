@@ -1,6 +1,6 @@
 
 *{
-    background-color: black;
+    background-color: #4831D4;
    
     padding: 0;
     margin: 0;
@@ -80,6 +80,3 @@ button:hover{
     color: blueviolet;
 }
 
-.bottom{
-    color: azure;
-}
