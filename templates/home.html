@@ -11,32 +11,40 @@
 </head>
 <body>
   
-    {% if request.user.is_authenticated %}
+    <!-- {% if request.user.is_authenticated %}
 <h3>Hello, {{request.user}}</h3>
 <button type="submit" ><a href="{% url 'logout' %}">logout</a></button>
-{% endif %}
+{% endif %} -->
 
-<div class="hero">
-    <nav>
-        <h2 class="logo">Oluwaseun<span> T</span></h2>
-        <ul>
-            
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            {% if request.user.is_authenticated %}
-            <li><a href="#">{{request.user}}</a></li>
-            {% else %}
-            <li><a href="{% url 'register' %}">Register</a></li>
-            {% endif %}
-        </ul>
-        <button type="button" onclick=>Subscribe</button>
-    </nav>
+<!--This is the header-->
 
-</div>
+<header>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Oluwaseun<span> T</span></h2>
+            <ul>
+                
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="#">{{request.user}}</a></li>
+                {% else %}
+                <li><a href="{% url 'register' %}">Register</a></li>
+                {% endif %}
+            </ul>
+            <button type="button" onclick=>Subscribe</button>
+        </nav>
+    </div>
+
+</header>
+
+<!--End of Header-->
+
+
 <div class="bottom">
     <span style="color:blue;">Hello world</span>
 
