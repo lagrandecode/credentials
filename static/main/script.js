@@ -5,5 +5,5 @@ let y  = document.getElementById('navid');
 
 x.onclick = () => {
     x.classList.toggle('fa-times');
-    y.classList.toggle('.open'); 
+    y.classList.toggle('.q'); 
 }
