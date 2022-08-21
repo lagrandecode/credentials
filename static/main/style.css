@@ -105,7 +105,7 @@ button:hover{
 
 html{
     font-size: 65.5%;
-    overflow-x: 12ppx;
+    overflow-x: 12px;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -120,4 +120,10 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: #CCF381;
+    font-size: 32px;
+    font-weight: bold;  
 }
