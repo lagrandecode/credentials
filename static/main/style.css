@@ -144,15 +144,18 @@ header .logo i:hover{
 
 
 header .navbar a{
+    margin-right: 20px;
     font-size: 12px;
-    border-radius: 10px;
+    border-radius: 10px 0px 10px 0px;
     padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 header .navbar a:hover{
     color: #4831D4;
+    background-color: #CCF381;
     transition: .3s;
     transform: scale(1,1);
     cursor: pointer;
@@ -161,9 +164,3 @@ header .navbar a:hover{
 
 
 
-header .navbar a:hover{
-    color: #CCF381;
-    transition: .3s;
-    transform: scale(1,1);
-    cursor: pointer;
-}
