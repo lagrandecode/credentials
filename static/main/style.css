@@ -83,6 +83,13 @@ button:hover{
 
  @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
+ :root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem   1.5rem rgba(0,0,0,.1);
+ }
+
 
  *{
     font-family: 'Aboreto', cursive;
@@ -99,4 +106,18 @@ button:hover{
 html{
     font-size: 65.5%;
     overflow-x: 12ppx;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    background-color: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
 }
