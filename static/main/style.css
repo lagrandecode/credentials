@@ -227,12 +227,12 @@ header .navbar a:hover{
         color: #CCF381;
         font-size: 25px;
         font-weight: bolder;  
-        clip-path: circle(0% at 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .3s ease-in-out;
    
     }
 
-    header .navbar .open{
+    header .navbar .active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
