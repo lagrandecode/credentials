@@ -1,9 +1,9 @@
 
 
-let menu = document.querySelector('#bars');
-let navbar  = document.querySelector('.navbar');
+let x = document.querySelector('#bars');
+let y  = document.querySelector('#navid');
 
-menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('open'); 
+x.onclick = () => {
+    x.classList.toggle('fa-times');
+    y.classList.toggle('.navbar .open'); 
 }

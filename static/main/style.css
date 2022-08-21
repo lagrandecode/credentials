@@ -227,13 +227,13 @@ header .navbar a:hover{
         color: #CCF381;
         font-size: 25px;
         font-weight: bolder;  
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: circle(10% at 0 0);
    
    
     }
 
     header .navbar .open{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%0);
     }
 
 
