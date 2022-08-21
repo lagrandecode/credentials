@@ -125,5 +125,9 @@ header{
 header .logo{
     color: #CCF381;
     font-size: 32px;
-    font-weight: bold;  
+    font-weight: bolder;  
+}
+
+header .logo i{
+    color: #CCF381;
 }
