@@ -233,7 +233,7 @@ header .navbar a:hover{
     }
 
     header .navbar .open{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%0);
+        clip-path: circle(70% at 0 0);
     }
 
 
