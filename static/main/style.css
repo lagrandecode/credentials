@@ -1,0 +1,99 @@
+/* 
+*{
+    background-color:wheat;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url(/static/unnamed.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: blue;
+    font-size: 28px;
+}
+
+span{
+    color: rgb(236, 35, 193);
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(236, 35, 193);
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+button{
+    background: rgb(236, 35, 193);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px 5px 10px 0px;
+    font-weight: bold;
+    color: white ;
+    font-size: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.but{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container{
+    color: blue;
+}
+.login{
+    color: blueviolet;
+}
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+ *{
+    font-family: 'Aboreto', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+ }
+
+ 
