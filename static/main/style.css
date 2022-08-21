@@ -141,6 +141,22 @@ header .logo i:hover{
 }
 
 
+
+header .icons i{
+    color: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    display: none;
+}
+
+
+
+
+
 header .navbar a{
     margin-right: 20px;
     font-size: 12px;
@@ -149,7 +165,10 @@ header .navbar a{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+   
 }
+
+header .navbar a.active,
 
 header .navbar a:hover{
     color: #4831D4;
@@ -157,8 +176,143 @@ header .navbar a:hover{
     transition: .3s;
     transform: scale(1,1);
     cursor: pointer;
+ 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 65%;
+
+    }
+    header .logo{
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder;  
+    }
+
+}
+
+@media (max-width:760px){
+
+    html{
+        font-size: 65%;
+
+    }
+
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder;  
+        clip-path: circle(0% at 0 0);
+        transition: .3s ease-in-out;
+   
+    }
+    header .navbar a{
+        display: block;
+        padding: 16px;
+        margin: 1rem;
+        padding: 1.5rem;
+        color: #4831D4;
+    }
+    header .icons i{
+        color: #4831D4;
+        border-radius: 50%;
+        background-color: #CCF381;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+        display: inline-block;
+    }
+    header .icons i:hover{
+        color: #CCF381;
+        background-color: #4831D4;
+        transform: rotate(360deg);
+        transition: .3s;
+
+    }
+    
+   
+
+
+}
+
+@media (max-width:570px){
+
+    html{
+        font-size: 40%;
+
+    }
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder; 
+
+    }
+    header .navbar a{
+        display: block;
+        padding: 16px;
+        margin: 1rem;
+        padding: 1.5rem;
+        color: #4831D4;
+    }
+    header .icons i{
+        color: #4831D4;
+        border-radius: 50%;
+        background-color: #CCF381;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+        display: inline-block;
+    }
+    header .icons i:hover{
+        color: #CCF381;
+        background-color: #4831D4;
+        transform: rotate(360deg);
+        transition: .3s;
+
+    }
+
+
+}
+
+
+
+
+
+
+
 
 
 
