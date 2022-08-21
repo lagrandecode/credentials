@@ -96,4 +96,7 @@ button:hover{
     transition: all .2s linear;
  }
 
- 
+html{
+    font-size: 65.5%;
+    overflow-x: 12ppx;
+}
