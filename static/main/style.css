@@ -228,11 +228,11 @@ header .navbar a:hover{
         font-size: 25px;
         font-weight: bolder;  
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .3s ease-in-out;
+   
    
     }
 
-    header .navbar .active{
+    header .navbar .open{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
