@@ -186,8 +186,10 @@ header .navbar a:hover{
 }
  .home .home-container .slide{
     display: flex;
-    align-items: center;
+    align-items: right;
     flex-wrap: wrap;
+    gap: .1rem;
+    padding-top: 6rem;
  }
 
 
