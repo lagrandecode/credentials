@@ -127,6 +127,10 @@ section{
     padding: 2rem 9%;
 }
 
+section:nth-child(even){
+    background-color: #eee;
+}
+
 header .logo{
     color: #CCF381;
     font-size: 32px;
@@ -186,10 +190,10 @@ header .navbar a:hover{
 }
  .home .home-container .slide{
     display: flex;
-    align-items: right;
+    align-items: center;
     flex-wrap: wrap;
-    gap: .1rem;
-    padding-top: 6rem;
+    gap: 2rem;
+    padding-top: 9rem;
  }
 
 
