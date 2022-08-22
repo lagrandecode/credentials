@@ -122,6 +122,11 @@ header{
     box-shadow: var(--box-shadow);
 }
 
+
+section{
+    padding: 2rem 9%;
+}
+
 header .logo{
     color: #CCF381;
     font-size: 32px;
@@ -179,7 +184,11 @@ header .navbar a:hover{
  
     
 }
-
+ .home .home-container .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
 
 
 
