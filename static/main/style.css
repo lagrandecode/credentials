@@ -1,0 +1,344 @@
+/* 
+*{
+    background-color:wheat;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url(/static/unnamed.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: blue;
+    font-size: 28px;
+}
+
+span{
+    color: rgb(236, 35, 193);
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(236, 35, 193);
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+button{
+    background: rgb(236, 35, 193);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px 5px 10px 0px;
+    font-weight: bold;
+    color: white ;
+    font-size: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.but{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container{
+    color: blue;
+}
+.login{
+    color: blueviolet;
+}
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+ :root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem   1.5rem rgba(0,0,0,.1);
+ }
+
+
+ *{
+    font-family: 'Aboreto', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+ }
+
+html{
+    font-size: 65.5%;
+    overflow-x: 12px;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    background-color: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background-color: #eee;
+}
+
+header .logo{
+    color: #CCF381;
+    font-size: 32px;
+    font-weight: bolder;  
+}
+
+header .logo i{
+    color: #CCF381;
+}
+
+
+
+header .logo i:hover{
+    color: #4831D4;
+    transition: .3s;
+    transform: scale(1,1);
+    cursor: pointer;
+    
+}
+
+
+
+header .icons i{
+    color: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    display: none;
+}
+
+
+
+
+
+header .navbar a{
+    margin-right: 20px;
+    font-size: 12px;
+    border-radius: 10px 0px 10px 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+   
+}
+
+header .navbar a.active,
+
+header .navbar a:hover{
+    color: #4831D4;
+    background-color: #CCF381;
+    transition: .3s;
+    transform: scale(1,1);
+    cursor: pointer;
+ 
+    
+}
+
+
+
+
+.slide{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 65%;
+
+    }
+    header .logo{
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder;  
+    }
+
+}
+
+@media (max-width:760px){
+
+    html{
+        font-size: 65%;
+
+    }
+
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder;  
+        clip-path: circle(0% at 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0)
+   
+   
+    }
+
+    header .navbar.open{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+
+    header .navbar a{
+        display: block;
+        padding: 16px;
+        margin: 1rem;
+        padding: 1.5rem;
+        color: #4831D4;
+    }
+    header .icons i{
+        color: #4831D4;
+        border-radius: 50%;
+        background-color: #CCF381;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+        display: inline-block;
+    }
+    header .icons i:hover{
+        color: #CCF381;
+        background-color: #4831D4;
+        transform: rotate(360deg);
+        transition: .3s;
+
+    }
+    
+   
+
+
+}
+
+@media (max-width:570px){
+
+    html{
+        font-size: 40%;
+
+    }
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        color: #CCF381;
+        font-size: 25px;
+        font-weight: bolder; 
+
+    }
+    header .navbar a{
+        display: block;
+        padding: 16px;
+        margin: 1rem;
+        padding: 1.5rem;
+        color: #4831D4;
+    }
+    header .icons i{
+        color: #4831D4;
+        border-radius: 50%;
+        background-color: #CCF381;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+        display: inline-block;
+    }
+    header .icons i:hover{
+        color: #CCF381;
+        background-color: #4831D4;
+        transform: rotate(360deg);
+        transition: .3s;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
