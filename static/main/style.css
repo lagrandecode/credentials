@@ -99,7 +99,7 @@ button:hover{
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    
     transition: all .2s linear;
  }
 
@@ -125,6 +125,7 @@ header{
 
 section{
     padding: 2rem 9%;
+ 
 }
 
 section:nth-child(even){
@@ -191,6 +192,11 @@ header .navbar a:hover{
     
 }
 
+.home-slide{
+    padding-top: 8rem;
+    align-items: center;
+}
+
 
 
 
@@ -201,7 +207,19 @@ header .navbar a:hover{
     
 }
 
+.content{
+    flex: 1 1 45rem;
+}
 
+.images{
+    width: 100% ;
+}
+
+span{
+    color: #CCF381;
+    font-size: medium;
+    font-weight: bolder;
+}
 
 
 
