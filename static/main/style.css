@@ -141,6 +141,8 @@ header .logo i{
     color: #CCF381;
 }
 
+
+
 header .logo i:hover{
     color: #4831D4;
     transition: .3s;
@@ -188,14 +190,16 @@ header .navbar a:hover{
  
     
 }
- .home .home-container .slide{
+
+
+
+
+.slide{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 9rem;
- }
-
+    
+}
 
 
 
