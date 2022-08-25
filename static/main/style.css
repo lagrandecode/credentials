@@ -234,7 +234,7 @@ span{
     color: black;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 10px 0px 10px px;
+    border-radius: 10px 0px 10px 0px;
     display: inline-block;
     background-color: #CCF381;
     cursor: pointer;
@@ -246,9 +246,9 @@ span{
 
 
 
+
+
 /*media queries */
-
-
 
 @media (max-width:991px){
 
