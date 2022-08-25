@@ -239,7 +239,12 @@ span{
     background-color: #CCF381;
     cursor: pointer;
 }
-
+.btn:hover{
+    color: white;
+    background-color: #4831D4;
+    transform: scale(1,1);
+    transition: .3s;
+}
 
 
 
