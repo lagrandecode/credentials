@@ -248,7 +248,12 @@ span{
 
 
 
-
+.heading, .sub-heading{
+    color: #27ae60;
+    text-align: center;
+    padding-top: 16px;
+    
+}
 
 
 
