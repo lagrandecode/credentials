@@ -234,12 +234,11 @@ span{
     color: black;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 0px 10px px;
     display: inline-block;
-    background-color: #27ae60;
+    background-color: #CCF381;
     cursor: pointer;
 }
-
 
 
 
