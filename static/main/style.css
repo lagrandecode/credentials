@@ -124,7 +124,7 @@ header{
 
 
 section{
-    padding: 2rem 9%;
+    padding: 2rem;
  
 }
 
@@ -267,6 +267,11 @@ span{
         font-weight: bolder;  
     }
 
+    section{
+        padding: 1rem;
+     
+    }
+
 }
 
 @media (max-width:760px){
@@ -274,6 +279,11 @@ span{
     html{
         font-size: 65%;
 
+    }
+
+    section{
+        padding: 1rem;
+     
     }
 
 
