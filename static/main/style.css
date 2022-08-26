@@ -317,7 +317,7 @@ span{
 
 .box{
     padding: 2.5rem;
-    background-color: aliceblue;
+    background-color: #CCF381;
     border-radius: 10px 0px 10px 0px;
     border: 2rem;
     position: relative;
@@ -325,6 +325,30 @@ span{
     text-align: center;
 }
 
+
+.fa-heart{
+    position: absolute;
+    border-radius: 50%;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: red;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    line-height: 5rem;
+
+}
+
+.fa-eye{
+    left: 1.5rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 1.5rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    line-height: 5rem;
+}
 
 
 
