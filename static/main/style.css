@@ -264,7 +264,7 @@ span{
 
 
 .box{
-    padding: 2.5rem;
+    display: flex;
     background: 2rem;
     border-radius: 5rem;
     position: relative;
@@ -272,7 +272,12 @@ span{
     border: 1 rem solid rgba(0,0,0,.2);
     box-shadow: #192a56;
     text-align: center;
+}
 
+
+.imgbox{
+    display: grid;
+    align-items: center;
 }
 
 
