@@ -308,9 +308,10 @@ span{
 }
 
 .imggrid{
-    height: 200px;
-    width: 200px;
-    
+    height: 180px;
+    width: 180px;
+    margin-left: 30px ;
+
     
 }
 
