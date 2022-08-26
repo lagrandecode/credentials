@@ -256,10 +256,23 @@ span{
 }
 
 
-.box-container{
+.dishes .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
+}
+
+
+.box{
+    padding: 2.5rem;
+    background: 2rem;
+    border-radius: 5rem;
+    position: relative;
+    overflow: hidden;
+    border: 1 rem solid rgba(0,0,0,.2);
+    box-shadow: #192a56;
+    text-align: center;
+
 }
 
 
