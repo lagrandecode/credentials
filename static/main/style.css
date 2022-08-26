@@ -284,12 +284,14 @@ span{
     color: #27ae60;
     text-align: center;
     font-size: 32px;
+    padding: 16px;
 }
 .Popular{
     color: #4831D4;
     font-size: 16px;
     text-align: center;
     text-transform: lowercase ;
+    padding-top: 10px;
 }
 
 
@@ -300,6 +302,10 @@ span{
 
 }
 
+.dishes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
 
 
 
