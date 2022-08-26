@@ -308,6 +308,11 @@ span{
    gap: 1.5rem;
 }
 
+.imggrid{
+    height: 250px;
+    width: 250px;
+}
+
 
 
 
