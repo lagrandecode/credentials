@@ -291,6 +291,7 @@ span{
     font-size: 16px;
     text-align: center;
     text-transform: lowercase ;
+    padding: 10px;
 
 }
 
@@ -304,13 +305,24 @@ span{
 
 .dishes-container{
     display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
-   gap: 1.5rem;
+   grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+   gap: 1rem;
+   margin: 32px;
 }
 
 .imggrid{
     height: 250px;
     width: 250px;
+}
+
+.box{
+    padding: 2.5rem;
+    background-color: aliceblue;
+    border-radius: 10px 0px 10px 0px;
+    border: 2rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 
