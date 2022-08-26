@@ -311,8 +311,8 @@ span{
 }
 
 .imggrid{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 
 .box{
@@ -348,6 +348,21 @@ span{
     background-color: rgb(255, 255, 255);
     padding: 8px;
     line-height: 5rem;
+}
+
+.amala{
+    font-size: 10px;
+    position: absolute;
+    bottom: 3.5rem;
+    right:8rem;
+}
+
+.star{
+    font-size: 8px;
+    position: absolute;
+    bottom: 2.2rem;
+    right: 6.5rem;
+    color: red;
 }
 
 
