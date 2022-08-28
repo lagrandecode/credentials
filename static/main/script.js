@@ -22,3 +22,14 @@ var swiper = new Swiper(".home-container", {
     },
     loop:true,
   });
+
+
+  var swiper = new Swiper(".review-container", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
+    loop:true,
+  });
