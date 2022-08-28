@@ -480,8 +480,8 @@ span{
 
 
 .userimg{
-    height: 7rem;
-    width: 7rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -513,6 +513,9 @@ span{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding-left: 32px;
+    padding-right: 32px;
+    
 
 }
 
