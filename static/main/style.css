@@ -479,6 +479,36 @@ span{
 }
 
 
+.userimg{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user{
+    gap: 1.5rem;
+    display: flex;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #3D155F;
+    align-items: center;
+}
+
+.username{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 10px;
+
+}
+
+.review-swipper{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
 
 
 
