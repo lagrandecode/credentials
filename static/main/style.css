@@ -390,15 +390,52 @@ span{
 }
 
 
-.aboutid{
-    background-color: #CCF381;
+.aboutx{
+    width: 100%;
+    
 
+}
+
+.aboutrow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagesabout{
+    flex: 1 1 45rem;
+}
+
+.imagesabout img{
+    width: 100%;
+}
+
+
+.aboutcontent{
+    flex: 1 1 45rem;
+}
+
+.aboutcontent h3{
+    padding: 16px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.aboutcontent p{
+    padding: 16px;
+    font-size: 10px;
+    color: black;
 }
 
 
 
 
 
+
+
+ 
 
 /*media queries */
 
