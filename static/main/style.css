@@ -103,6 +103,11 @@ button:hover{
     transition: all .2s linear;
  }
 
+ .swipetext{
+    color: wheat;
+    font-size: 16px;
+ }
+
 html{
     font-size: 65.5%;
     overflow-x: 12px;
@@ -517,6 +522,16 @@ span{
     padding-right: 32px;
     
 
+}
+
+
+/* Address sections */
+
+.address{
+    background-color: #4831D4;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
