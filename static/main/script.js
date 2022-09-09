@@ -9,6 +9,8 @@ x.onclick = () => {
 }
 
 
+//Oluwaseun Ogunmolu//
+
 var swiper = new Swiper(".home-container", {
     spaceBetween: 30,
     centeredSlides: true,
